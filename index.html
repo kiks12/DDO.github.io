@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDO Vale Puzzle</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <main>
+        <div class="actions-container">
+            <div class="actions-info">
+                <h2>DDO Vale Puzzle</h2>
+                <p id="scoringText"></p>
+            </div>
+            <button id="refreshButton">Refresh</button>
+        </div>
+
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+    </main>
+
+    <div id="winModal" class="modal">
+        <div class="card">
+            <h1>You Won!</h1>
+            <button onclick="closeModal('winModal')">Okay</button>
+        </div>
+    </div>
+
+
+    <div id="lostModal" class="modal">
+        <div class="card">
+            <h1>You Lost!</h1>
+            <button onclick="closeModal('lostModal')">Okay</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
